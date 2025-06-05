@@ -1,4 +1,4 @@
-# LLMVULN
+# LLMSYS
  This is the codebase for Multi Agent One-Day Exploit System orchestrated using Langchain, LangGraph and 3rd Party LLMs.
 
 ### To run the project run the following commands:
