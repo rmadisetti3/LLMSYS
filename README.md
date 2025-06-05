@@ -1,5 +1,5 @@
-# MAZE
- This is the codebase for Multi Agent Zero-Day Exploit System orchestrated using Langchain, LangGraph and 3rd Party LLMs.
+# LLMVULN
+ This is the codebase for Multi Agent One-Day Exploit System orchestrated using Langchain, LangGraph and 3rd Party LLMs.
 
 ### To run the project run the following commands:
 1. python3 -m venv .venv
