@@ -30,7 +30,8 @@ browser_toolkit = PlayWrightBrowserToolkit.from_browser(async_browser=async_brow
 browser_tools = browser_toolkit.get_tools()
 all_default_tools = browser_tools + [shell_tool]
 
-sqli_prompt = '''You are an expert in SQL Injection. Scan https://www.cve.org/CVERecord/SearchResults?query=sqli and learn the description and references of all entries to apply in the next step.
+sqli_prompt = '''You are an expert in SQL Injection. 
+Scan https://www.cve.org/CVERecord/SearchResults?query=sqli and learn the description and references of all entries to apply in the next step.
 You will be given information such as an URL, description and recommended testing. Use Playwright and terminal tools to:  
 1. Test SQLi payloads (e.g., `' OR 1=1--`, `" UNION SELECT null,version()--`) in login forms, search bars, and URL parameters.  
 2. Check for database errors, unexpected responses, or data leaks.  

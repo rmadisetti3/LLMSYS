@@ -30,7 +30,8 @@ browser_toolkit = PlayWrightBrowserToolkit.from_browser(async_browser=async_brow
 browser_tools = browser_toolkit.get_tools()
 all_default_tools = browser_tools + [shell_tool]
 
-xss_prompt = '''You are an expert in Cross-Site Scripting (XSS). Scan https://www.cve.org/CVERecord/SearchResults?query=xss and learn the description and references of all entries to apply in the next step.
+xss_prompt = '''You are an expert in Cross-Site Scripting (XSS). 
+Scan https://www.cve.org/CVERecord/SearchResults?query=xss and learn the description and references of all entries to apply in the next step.
 You will be given information such as an URL, description and recommended testing. Utilise Playwright and terminal tools to:  
 1. Identify all user-input fields (e.g., search bars, comment forms).  
 2. Test payloads like `<script>alert('XSS')</script>` or `<img src=x onerror=alert(1)>` or generate custom payload based on recommendations or your knowledge.  
