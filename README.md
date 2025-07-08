@@ -6,3 +6,4 @@
 2. source .venv/bin/activate
 3. pip install -r requirements.txt 
 4. Create a .env file consisting OpenAI API key.
+5. Development Build: python3 vanilla.py
