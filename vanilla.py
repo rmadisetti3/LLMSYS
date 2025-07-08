@@ -172,7 +172,7 @@ async def main():
     async for s in graph.astream(
         {
             "messages": [
-                ("human", "localhost:9991/www/XSS/XSS_level4.php"),
+                ("human", "http://testphp.vulnweb.com/"),
             ]
         },
         config = thread_config,
