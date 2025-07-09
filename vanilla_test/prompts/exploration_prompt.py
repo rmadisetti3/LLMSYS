@@ -26,11 +26,6 @@ exploration_prompt = (
     "6. **Error Handling**:\n"
     "   - If page cannot be loaded, return error state with screenshot\n"
     "   - If dynamic elements fail to render, note required interactions\n\n"
-    "7. **Feroxbuster**:\n"
-    "   - You can use the shell tool to get information about the available endpoints of a webapp"
-    "   - feroxbuster retrieves the endpoints by crawling on the domain."
-    "   - example command to use feroxbuster: feroxbuster --url [put_url_here] -w /Users/siddansh/Desktop/feroxbuster_seclists/raft-medium-directories.txt -x php -X '\.(jpg|png|gif|jpeg)$' -Q 'id=1' --silent"
-    "   - Your goal is to showcase all sensistive endpoints irrespective of their status code, sensitive endpoint may reveal database information (db) etc. and may end with /db?id=1"
 
     "### Important\n"
     "• No vulnerability speculation — produce only the technical mapping.\n"
